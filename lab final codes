@@ -127,22 +127,29 @@ int main()
 // selection sort 
 #include <bits/stdc++.h>
 using namespace std;
- 
-void selectionSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        int minIdx = i;
- 
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIdx]) {
-                minIdx = j;
-            }
+
+int main()
+{
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    for (int i = 0; i < n; i++)
+        cin >> v[i];
+    for (int i = 0; i < n - 1; i++)
+    {
+        int minindex = i;
+        for (int j = i + 1; j < n; j++)
+        {
+
+            if (v[j] < v[minindex])
+                minindex = j;
         }
- 
-        if (minIdx != i) {
-            swap(arr[i], arr[minIdx]);
-        }
+        swap(v[i], v[minindex]);
     }
+    for (auto &u : v)
+        cout << u << " ";
 }
+
  
 int main() {
    Tc:n^2
