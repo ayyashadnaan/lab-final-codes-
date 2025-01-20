@@ -3,7 +3,7 @@
 using namespace std;
 
 int main()
-{
+{   // Tc: O(n)
     int n;
     cin >> n;
     vector<vector<int>> hash(10);
@@ -31,6 +31,7 @@ int main()
         i++;
     }
 }
+// Tc: O(n)
 
 // binary search 
 #include <bits/stdc++.h>
@@ -48,7 +49,7 @@ int binary_search(vector<int> &v, int low, int high, int target)
         return binary_search(v, low, mid - 1, target);
 }
 int main()
-{
+{   //TC:O(n log n)
     int n;
     cin >> n;
     vector<int> v(n);
@@ -70,7 +71,8 @@ int main()
 using namespace std;
 
 int main()
-{
+{   
+   TC:n^2
     int n;
     cin >> n;
     vector<int> v(n);
@@ -96,7 +98,8 @@ int main()
 using namespace std;
 
 int main()
-{
+{  
+   TC:n^2
     int n;
     cin >> n;
     vector<int> v(n);
@@ -132,7 +135,8 @@ int fib(int n)
     return fib(n - 2) + fib(n - 1);
 }
 int main()
-{
+{   
+   TC:(2^n)
     int n;
     cin >> n;
     cout << fib(n);
@@ -143,6 +147,8 @@ using namespace std;
 
 int main()
 {
+
+   TC:O(n)
     int n;
     cin >> n;
     
@@ -183,7 +189,8 @@ int factorial(int n)
 }
 
 int main()
-{
+{   
+    TC:O(n)
     int n;
     cin >> n;
     cout << factorial(n);  
@@ -201,7 +208,8 @@ int factorial(int n)
 }
 
 int main()
-{
+{   
+   TC:O(n)
     int n;
     cin >> n;
     cout << factorial(n);  
